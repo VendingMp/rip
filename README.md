@@ -14,7 +14,7 @@
 
 </p>
 
-< p align = "tengah" >
+
 
 
 
