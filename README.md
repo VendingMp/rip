@@ -30,8 +30,8 @@
 > pkg install git
 > pkg install nodejs
 > pkg install mc
-> cd
-> ls
+> git clone https://github.com/projectskiuwers/rip
+
 > cd rip 
 > ls
 > bash install.sh 
