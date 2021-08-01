@@ -17,6 +17,7 @@
 <p align="center">
 
 <a href="https://github.com/projectskiuwers/rip"><img title="FOLLOWERS" src="https://img.shields.io/github/followers/projectskiuwers?color=blue&style= datar-persegi"></a>
+</p>
 
 <a href="https://github.com/projectskiuwers/rip/stargazers/"><img title="START" src="https://img.shields.io/github/stars/projectskiuwers/rip?color =merah&style=flat-square"></a>
 
