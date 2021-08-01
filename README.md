@@ -38,3 +38,9 @@
 > npm start
 > Now scan the QR
 ```
+
+## DONATE
+
+- [PULSA] (6287776101997)
+
+- [DANA] (6287776101997)
