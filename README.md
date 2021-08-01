@@ -16,8 +16,8 @@
 
 < p align = "tengah" >
 
-< a  href = " https://github.com/projectskiuwers/rip " >< img  title = "Pengikut"  src = " https://img.shields.io/github/followers/projectskiuwers?color=blue&style= datar- persegi" ></ a >
-</p>
+
+
 
 
 
