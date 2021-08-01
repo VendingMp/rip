@@ -119,12 +119,12 @@ cr = setting.cr
 petik = '```'
 msgId="B826873620DD5947E683E3ABE663F263"
 //Apikey
-zeks = 'apivinz' //https://api.zeks.xyz
-xteam = 'd90a9e986e18778b' //https://api.xteam.xyz
-lolkey = '3d427dd3c79b5ace05193a6a' //https://api.lolhuman.xyz
-apiku = 'api-alphabot.herokuapp.com' //https://api-alphabot.herokuapp.com
-LeysCoder = 'dappakntlll' //https://leyscoders-api.herokuapp.com
-zahir = 'zahirgans' //https://zahirr-web.herokuapp.com
+zeks = '#' //https://api.zeks.xyz
+xteam = '#' //https://api.xteam.xyz
+lolkey = '#' //https://api.lolhuman.xyz
+apiku = '#' //https://api-alphabot.herokuapp.com
+LeysCoder = '#' //https://leyscoders-api.herokuapp.com
+zahir = '#' //https://zahirr-web.herokuapp.com
 //setting
 
 //=================================================//
@@ -679,7 +679,8 @@ switch (command) {
 		wew =`
 ${petik}◪─❲ INFORMATION ❳
 │
-├❒ Creator : īts.me/Arip͘⁴̅⁰͍⁴̵〆
+├❒ Creator : īts.me/Arip
+├❒ Owner : ${ownername}
 ├❒ Mode : ${banChats ? 'SELF-MODE' : 'PUBLIC-MODE'}
 ├❒ Status : ${offline ? 'OFFLINE' : 'ONLINE'}
 ├❒ Date : ${thisDay}, ${day} ${myMonths[bulan]} ${year}
@@ -708,10 +709,6 @@ ${petik}◪─❲ INFORMATION ❳
 ├─❒ ${prefix}iklan
 └─❒ ${prefix}info
 
-◪─❲ MEDIATOR ❳
-│
-├─❒ Instagram.com/skiuwers
-└─❒ github.com/skiuwers
 
 ❒   Creator BotWea © 2K21   ❒${petik}\n`
 
@@ -2700,7 +2697,8 @@ case prefix+'creator':
 		            + 'END:VCARD'.trim()
 		            arip.sendMessage(from, {displayName: `${setting.ownername}`, vcard: vcard2}, contact, { quoted: fkontak, contextInfo: {"mentionedJid": members_ids}})
 		            arip.sendMessage(from, 'TUHH NOMER OWNER KU [(>_<)] JANGAN KASARIN YAA',MessageType.text, { quoted: fgclink} )
-		            break*/
+		            break
+*/
 case prefix+'owner':  
 case prefix+'creator':  
                     ocr = args.join('')
