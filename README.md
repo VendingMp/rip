@@ -10,7 +10,7 @@
 
 <p align="center">
 
-<a href="https://github.com/projectskiuwers"><img title="Author" src="https://img.shields.io/badge/Author-AripDev-red.svg?style=for- the-badge&logo=github"></a>
+<  a   href = " https://github.com/projectskiuwers "  ><  img   title = "Penulis"   src = " https://img.shields.io/badge/Author-AripDev-red.svg?style=for- the-badge&logo=github"  ></  a  >
 
 </p>
 
