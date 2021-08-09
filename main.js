@@ -45,12 +45,12 @@ const starts = async (arip = new WAConnection()) => {
 
     fs.existsSync('./session.json') && arip.loadAuthInfo('./session.json')
     arip.on('connecting', () => {
-        start('2', '🔘 Succes [•]')
+        start('2', '🔴 Succes [•]')
     })
     arip.on('open', () => {
         success('2', 'Connected')
     setTimeout( () => {
-	    	console.log(color(`🔘 Succes [✓]`, 'aqua'))
+	    	console.log(color(`🔴 Succes [✓]`, 'red'))
 	    	}, 1000)    		    	     	
          	}) 
          await arip.connect({timeoutMs: 30*1000})
