@@ -3,7 +3,7 @@
   BISMILLAH
 
   ◪ Base : Self-Bot°©2K21
-  ◪ Lib : Baileys [ versi 4.3.1 ]
+  ◪ Lib : Baileys [ versi 4.5.1 ]
   ◪ Source code : Zeeone YT
   ◪ Recode : ItsMeArip :)
   
@@ -98,28 +98,28 @@ const { fotoIg, videoIg } = require('./plugins/ig.js')
 const { lirikLagu } = require('./plugins/lirik.js')
 const { fbDown } = require('./plugins/fb.js')
 const { wikiSearch } = require('./plugins/wiki.js')
-//setting
-thumb = setting.thumb // edit di setting.json
-fthumb = setting.fakethumb // edit di setting.json
-hit_today = [] // jangan diubah
-blocked = [] // jangan diubah
+//setting\\
 prefix = setting.prefix // edit di setting.json
-banChats = true // jangan diubah
-offline = false // jangan diubah
-img = setting.img // edit di setting.json
-creator = 'X-Skiuwers' // Jangan diubah 
-lolkey = '3d427dd3c79b5ace05193a6a' // https://api.lolhuman.xyz
-apiku = 'skiuwers' // https://api-skiuwers.herokuapp.com/api
 targetpc = setting.ownerNumber // edit di setting.json
 owner = setting.ownerNumber // edit di setting.json
-ownerr = '+6285945300923' // jangan diubah
+thumb = setting.thumb // edit di setting.json
+fthumb = setting.fakethumb // edit di setting.json
 fake = setting.fake // edit di setting.json
-numbernye = '0' // jangan diubah
-waktu = '-' // jangan diubah
-alasan = '-' // jangan diubah
+img = setting.img // edit di setting.json
 botname = setting.botname // edit di setting.json
 ownername = setting.ownername // edit di setting.json
 cr = setting.cr // edit di setting.json
+hit_today = [] // jangan diubah
+blocked = [] // jangan diubah
+banChats = true // jangan diubah
+offline = false // jangan diubah
+creator = 'X-AripDev' // Jangan diubah 
+lolkey = '3d427dd3c79b5ace05193a6a' // https://api.lolhuman.xyz
+apiku = 'skiuwers' // https://api-skiuwers.herokuapp.com/api
+ownerr = '+6285945300923' // jangan diubah
+numbernye = '0' // jangan diubah
+waktu = '-' // jangan diubah
+alasan = '-' // jangan diubah
 petik = '```' // jangan diubah
 msgId="B826873620DD5947E683E3ABE663F263" // jangan diubah
 
@@ -332,7 +332,7 @@ key: {
 						"mimetype": "image/jpeg",
 						"jpegThumbnail": fs.readFileSync(`image/${thumb}`) //Gambarnye
 					},
-					"title": 'SELF BOT ', 
+					"title": 'S K I U W E R S', 
 					"description": "SELF BOT", 
 					"currencyCode": "IDR",
 					"priceAmount1000": "66666666666",
@@ -602,11 +602,11 @@ const replyy = (teks) => {
 		const isQuotedSticker = type === 'extendedTextMessage' && content.includes('stickerMessage')
 	    
       	if (!isGroup && isCmd) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32mEXEC\x1b[1;37m]', time, color(command), 'from', color(sender.split('@')[0]), 'args :', color(args.length))
-      	//auto merekam || selfbot
+      	//auto merekam || creator bot wa
       	skiuwers.updatePresence(from, Presence.recording)
       	//if (!isGroup && !isCmd) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;31mTEXT\x1b[1;37m]', time, color('Message'), 'from', color(sender.split('@')[0]), 'args :', color(args.length))
      	if (isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32mEXEC\x1b[1;37m]', time, color(command), 'from', color(sender.split('@')[0]), 'in', color(groupName), 'args :', color(args.length))
-      	//auto merekam || selfbot
+      	//auto merekam || creator bot wa
       	skiuwers.updatePresence(from, Presence.recording)
       	//if (!isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;31mTEXT\x1b[1;37m]', time, color('Message'), 'from', color(sender.split('@')[0]), 'in', color(groupName), 'args :', color(args.length))
 		if (!mek.key.fromMe && banChats === true) return
@@ -614,7 +614,6 @@ const replyy = (teks) => {
 switch (command) {
     case prefix+ 'menu':
     case prefix+ 'help':
-		//skiu = fs.readFileSync(`image/thumbnail.jpg`)
 		heheh = ms(Date.now() - waktu) 
 		wew =`
 ${petik}◪─❲ INFORMATION ❳
@@ -634,11 +633,12 @@ ${petik}◪─❲ INFORMATION ❳
 ├─❒ ${prefix}othermenu
 ├─❒ ${prefix}ownermenu
 ├─❒ ${prefix}groupmenu
+├─❒ ${prefix}islammenu
 ├─❒ ${prefix}convertmenu
 ├─❒ ${prefix}downloadmenu
 ├─❒ ${prefix}searchingmenu
 ├─❒ ${prefix}storagemenu
-├─❒ ${prefix}islammenu
+├─❒ ${prefix}animemenu
 ├─❒ ${prefix}funmenu
 ├─❒ ${prefix}tagmenu
 └─❒ ${prefix}upmenu
@@ -653,7 +653,7 @@ ${petik}◪─❲ INFORMATION ❳
 
 ❒   Creator BotWea © 2K21   ❒${petik}\n`
 
-skiuwers.sendMessage(from, wew, text, {quoted: ftroli ,caption : { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/fake.jpg`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
+skiuwers.sendMessage(from, wew, text, {quoted: ftroli ,caption : { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
             break
             case prefix+'mystat': 
 	        case prefix+'info':
@@ -692,7 +692,7 @@ break
 //menuconvert
 case prefix+'convertmenu':   
 ghea =`
-${petik}◪ CONVERT MENU
+${petik}◪─❲ CONVERT MENU ❳
 │
 ├─❒ ${prefix}toimg
 ├─❒ ${prefix}tomp3
@@ -700,7 +700,17 @@ ${petik}◪ CONVERT MENU
 ├─❒ ${prefix}slow
 ├─❒ ${prefix}fast
 ├─❒ ${prefix}reverse
-└─❏ ${prefix}tourl${petik}\n`
+└─❏ ${prefix}tourl
+
+◪─❲ ABOUT ❳
+│
+├─❒ ${prefix}source
+├─❒ ${prefix}apikey
+├─❒ ${prefix}donate
+├─❒ ${prefix}iklan
+└─❒ ${prefix}info
+
+❒   Creator BotWea © 2K21   ❒${petik}\n`
 skiuwers.sendMessage(from, ghea, text, {quoted: ftoko, caption : { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
 break
 case prefix+ 'toimg':
@@ -798,7 +808,7 @@ case prefix+ 'tourl':
 //downloadmenu
 case prefix+'downloadmenu':
 gheaa =`
-${petik}◪ DOWNLOAD MENU
+${petik}◪─❲ DOWNLOAD MENU ❳
 │
 ├─❒ ${prefix}play <query>
 ├─❒ ${prefix}ytmp3 <link>
@@ -806,7 +816,17 @@ ${petik}◪ DOWNLOAD MENU
 ├─❒ ${prefix}tiktok <link>
 ├─❒ ${prefix}twitter <link>
 ├─❒ ${prefix}instagram <link>
-└─❏ ${prefix}facebook <link>${petik}\n`
+└─❏ ${prefix}facebook <link>
+
+◪─❲ ABOUT ❳
+│
+├─❒ ${prefix}source
+├─❒ ${prefix}apikey
+├─❒ ${prefix}donate
+├─❒ ${prefix}iklan
+└─❒ ${prefix}info
+
+❒   Creator BotWea © 2K21   ❒${petik}\n`
 skiuwers.sendMessage(from, gheaa, text, {quoted: ftoko, caption : { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
 break
 case prefix+ 'play':
@@ -970,7 +990,7 @@ case prefix+ 'fb':
 //menufun
 case prefix+'funmenu':   
         gheau =`
-${petik}◪ FUN MENU
+${petik}◪─❲ FUN MENU ❳
 │
 ├─❒ ${prefix}gantengcek
 ├─❒ ${prefix}cantikcek
@@ -984,18 +1004,28 @@ ${petik}◪ FUN MENU
 ├─❒ ${prefix}truth
 ├─❒ ${prefix}dare
 ├─❒ ${prefix}suit
-└─❒ ${prefix}rate${petik}\n`
+└─❒ ${prefix}rate
+
+◪─❲ ABOUT ❳
+│
+├─❒ ${prefix}source
+├─❒ ${prefix}apikey
+├─❒ ${prefix}donate
+├─❒ ${prefix}iklan
+└─❒ ${prefix}info
+
+❒   Creator BotWea © 2K21   ❒${petik}\n`
 skiuwers.sendMessage(from, gheau, text, {quoted: ftoko, caption : { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
 break
 
 //------------------< Math Random >-------------------
+
 case prefix+ 'suit':
 	if (!q) return reply(`\nPilih : Batu, Gunting, Kertas.\nExample : ${prefix}suit kertas\n`)
 	query = args.join(" ")
 	const botol = ['Batu','Gunting','Kertas']
             const suitcuy = botol[Math.floor(Math.random() * botol.length)]
     brow = `
-
 ◪ PLAYER 1
 │
 ├❒ ${ownername}
@@ -1105,7 +1135,30 @@ Yang kalah ngirim pulsa :V
 /*
 ]=====> NSFW MENU<=====[
 */
+//menuanime
+case prefix+'animemenu':   
+        gheauu =`
+${petik}◪─❲ ANIME MENU ❳
+│
+├─❒ ${prefix}anime
+├─❒ ${prefix}awoo
+├─❒ ${prefix}blowjob
+├─❒ ${prefix}hentai
+├─❒ ${prefix}megumin
+├─❒ ${prefix}trapnime
+└─❏ ${prefix}neko
 
+◪─❲ ABOUT ❳
+│
+├─❒ ${prefix}source
+├─❒ ${prefix}apikey
+├─❒ ${prefix}donate
+├─❒ ${prefix}iklan
+└─❒ ${prefix}info
+
+❒   Creator BotWea © 2K21   ❒${petik}\n`
+skiuwers.sendMessage(from, gheauu, text, {quoted: ftoko, caption : { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
+break
 case prefix+ 'anime':
 		            fakegroup('```BENTAR```')
 		            fetch('https://raw.githubusercontent.com/pajaar/grabbed-results/master/pajaar-2020-gambar-anime.txt')
@@ -1171,16 +1224,42 @@ case prefix+ 'anime':
 //menumaker
 case prefix+'makermenu':   
         gheauu =`
-${petik}◪ MAKER MENU
+${petik}◪─❲ MAKER MENU ❳
 │
 ├─❒ ${prefix}sticker
 ├─❒ ${prefix}swm <author|packname>
 ├─❒ ${prefix}take <author|packname>
-└─❏ ${prefix}emoji${petik}\n`
+├─❒ ${prefix}attp
+├─❒ ${prefix}ttp
+└─❏ ${prefix}emoji
+
+◪─❲ ABOUT ❳
+│
+├─❒ ${prefix}source
+├─❒ ${prefix}apikey
+├─❒ ${prefix}donate
+├─❒ ${prefix}iklan
+└─❒ ${prefix}info
+
+❒   Creator BotWea © 2K21   ❒${petik}\n`
 skiuwers.sendMessage(from, gheauu, text, {quoted: ftoko, caption : { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
 break
 //terbaru
+case prefix+ 'attp': 
+if (args.length < 1) return reply('Penggunaan : ${prefix}attp skiuwers')
+arip = body.slice(6)
+rip = await getBuffer(`https://api.skiuwers-herokuapp.com/api/attp?file&text&apikey=${apiku}`)
+skiuwers.sendMessage(from, rip, sticker, {quoted: freply})
+break
+
+case prefix+ 'ttp': 
+if (args.length < 1) return reply('Penggunaan : ${prefix}ttp skiuwers')
+arip = body.slice(5)
+rip = await getBuffer(`https://api.skiuwers-herokuapp.com/api/ttp?file&text&apikey=${apiku}`)
+skiuwers.sendMessage(from, rip, sticker, {quoted: freply})
+break
 //terbaru
+
 case prefix+ 'sticker': 
 		    case prefix+ 'stiker':
 		    case prefix+ 'sg':
@@ -1239,7 +1318,7 @@ case prefix+ 'sticker':
 		            break               
 case prefix+ 'take':
 case prefix+ 'colong':
-		    		if (!isQuotedSticker) return reply('Stiker aja om')
+		    		if (!isQuotedSticker) return reply('mess.stick')
 		            encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 				    media = await skiuwers.downloadAndSaveMediaMessage(encmedia)
 		            anu = args.join(' ').split('|')
@@ -1251,7 +1330,7 @@ case prefix+ 'colong':
 case prefix+ 'stikerwm':
 case prefix+ 'stickerwm':
 case prefix+ 'swm':
-		            pe = args.join('')
+		            pe = args.join(' ')
 		            var a = pe.split("|")[0];
 		            var b = pe.split("|")[1];
 		            if (isMedia && !mek.message.videoMessage || isQuotedImage ) {
@@ -1321,14 +1400,24 @@ case prefix+ 'emoji':
 //menuother
 case prefix+'othermenu':   
         gheauu =`
-${petik}◪ OTHER MENU
+${petik}◪─❲ OTHER MENU ❳
 │
 ├─❒ ${prefix}jahil
 ├─❒ ${prefix}jahilpc
 ├─❒ ${prefix}mediafire <link>
 ├─❒ ${prefix}getcode <link>
 ├─❒ ${prefix}fakeloc
-└─❒ ${prefix}fdeface${petik}\n`
+└─❒ ${prefix}fdeface
+
+◪─❲ ABOUT ❳
+│
+├─❒ ${prefix}source
+├─❒ ${prefix}apikey
+├─❒ ${prefix}donate
+├─❒ ${prefix}iklan
+└─❒ ${prefix}info
+
+❒   Creator BotWea © 2K21   ❒${petik}\n`
 skiuwers.sendMessage(from, gheauu, text, {quoted: ftoko, caption : { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
 break
 case prefix+ 'mutual':
@@ -1398,7 +1487,7 @@ case prefix+ 'fakeloc':
 //islammenu
 case prefix+'islammenu':   
         gheauu =`
-${petik}◪ ISLAM MENU
+${petik}◪─❲ ISLAM MENU ❳
 │
 ├─❒ ${prefix}tahlil
 ├─❒ ${prefix}alquran
@@ -1408,7 +1497,17 @@ ${petik}◪ ISLAM MENU
 ├─❒ ${prefix}doaharian
 ├─❒ ${prefix}bacaansholat
 ├─❒ ${prefix}niatsholat
-└─❒ ${prefix}ayatkursi${petik}\n`
+└─❒ ${prefix}ayatkursi
+
+◪─❲ ABOUT ❳
+│
+├─❒ ${prefix}source
+├─❒ ${prefix}apikey
+├─❒ ${prefix}donate
+├─❒ ${prefix}iklan
+└─❒ ${prefix}info
+
+❒   Creator BotWea © 2K21   ❒${petik}\n`
 skiuwers.sendMessage(from, gheauu, text, {quoted: ftoko, caption : { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
 break
 case prefix+ 'alquran':
@@ -1440,13 +1539,13 @@ t1 = teks.split('|')[0]
 t2 = teks.split('|')[1]
 get_result = await fetchJson(`https://api-skiuwers.herokuapp.com/api/hadits?kitab=${t1}&nomor=${t2}&apikey=${apiku}`)
 get_result = get_result.result
-ini_txt = `Judul : ${get_result.message}\n`
-ini_txt += `Nama : ${get_result.data.name}\n`
-ini_txt += `id : ${get_result.data.id}\n`
-ini_txt += `Available : ${get_result.data.available}`
-ini_txt += `Nomor : ${get_result.data.contents.number}\n`
-ini_txt += `Arab : ${get_result.data.contents.arab}\n`
-ini_txt += `Latin : ${get_result.data.contents.id}`
+ini_txt = `❒ Judul : ${get_result.message}\n`
+ini_txt += `❒ Nama : ${get_result.data.name}\n`
+ini_txt += `❒ ID : ${get_result.data.id}\n`
+ini_txt += `❒ Available : ${get_result.data.available}`
+ini_txt += `❒ Nomor : ${get_result.data.contents.number}\n`
+ini_txt += `❒ Arab : ${get_result.data.contents.arab}\n`
+ini_txt += `❒ Latin : ${get_result.data.contents.id}\n`
 reply(ini_txt)
 break
 
@@ -1520,7 +1619,7 @@ case prefix+ 'bacaansholat':
 //menusearching
 case prefix+'searchingmenu':   
         gheauuu =`
-${petik}◪ SEARCHING MENU
+${petik}◪─❲ SEARCHING MENU ❳
 │
 ├─❒ ${prefix}artinama <nama>
 ├─❒ ${prefix}brainly <query>
@@ -1529,7 +1628,17 @@ ${petik}◪ SEARCHING MENU
 ├─❒ ${prefix}wikipedia <query>
 ├─❒ ${prefix}google <query>
 ├─❒ ${prefix}ytsearch <query>
-└─❏ ${prefix}igstalk <username>${petik}\n`
+└─❏ ${prefix}igstalk <username>
+
+◪─❲ ABOUT ❳
+│
+├─❒ ${prefix}source
+├─❒ ${prefix}apikey
+├─❒ ${prefix}donate
+├─❒ ${prefix}iklan
+└─❒ ${prefix}info
+
+❒   Creator BotWea © 2K21   ❒${petik}\n`
 skiuwers.sendMessage(from, gheauuu, text, {quoted: ftoko, caption : { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
 break
 //terbaru
@@ -1672,9 +1781,9 @@ case prefix+ 'brainly':
 					if (args.length < 1) return reply('Pertanyaan apa')
 		          	brien = args.join(' ')
 					brainly(`${brien}`).then(res => {
-					teks = '❉───────────────────────❉\n'
+					teks = '◪───────────────────────◪\n'
 					for (let Y of res.data) {
-					teks += `\n*「 _BRAINLY_ 」*\n\n*➸ Pertanyaan:* ${Y.pertanyaan}\n\n*➸ Jawaban:* ${Y.jawaban[0].text}\n◪──────────────────◪\n`
+					teks += `\n*「 _BRAINLY_ 」*\n\n*❒ Pertanyaan:* ${Y.pertanyaan}\n\n*❒ Jawaban:* ${Y.jawaban[0].text}\n◪──────────────────◪\n`
 					}
 					skiuwers.sendMessage(from, teks, text,{quoted:mek,detectLinks: false})                        
 		            })              
@@ -1684,7 +1793,7 @@ case prefix+ 'brainly':
 case prefix+'grupmenu':  
 case prefix+'groupmenu':   
         gheauuus =`
-${petik}◪ GROUP MENU
+${petik}◪─❲ GROUP MENU ❳
 │
 ├─❒ ${prefix}gc <buka/tutup>
 ├─❒ ${prefix}gcname <teks>
@@ -1696,7 +1805,17 @@ ${petik}◪ GROUP MENU
 ├─❒ ${prefix}kick
 ├─❒ ${prefix}sider
 ├─❒ ${prefix}tagall
-└─❏ ${prefix}hidetag\n`
+└─❏ ${prefix}hidetag
+
+◪─❲ ABOUT ❳
+│
+├─❒ ${prefix}source
+├─❒ ${prefix}apikey
+├─❒ ${prefix}donate
+├─❒ ${prefix}iklan
+└─❒ ${prefix}info
+
+❒   Creator BotWea © 2K21   ❒${petik}\n`
 skiuwers.sendMessage(from, gheauuus, text, {quoted: ftoko, caption : { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
 break
 case prefix+ 'carigroup':
@@ -2013,7 +2132,7 @@ case prefix+'listpc':
 //menustorage
 case prefix+'storagemenu':   
         gheauuuuu =`
-${petik}◪ STORAGE MENU
+${petik}◪─❲ STORAGE MENU ❳
 │
 ├─❒ ${prefix}addstik 
 ├─❒ ${prefix}addimg 
@@ -2026,7 +2145,17 @@ ${petik}◪ STORAGE MENU
 ├─❒ ${prefix}liststick
 ├─❒ ${prefix}listimg
 ├─❒ ${prefix}listvid
-└─❏ ${prefix}listvn${petik}\n`
+└─❏ ${prefix}listvn
+
+◪─❲ ABOUT ❳
+│
+├─❒ ${prefix}source
+├─❒ ${prefix}apikey
+├─❒ ${prefix}donate
+├─❒ ${prefix}iklan
+└─❒ ${prefix}info
+
+❒   Creator BotWea © 2K21   ❒${petik}\n`
 skiuwers.sendMessage(from, gheauuuuu, text, {quoted: ftoko, caption : { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
 break
 /*
@@ -2152,13 +2281,23 @@ break
 //menutag
 case prefix+'tagmenu':   
         gheauuuuau =`
-${petik}◪ MENU TAG
+${petik}◪─❲ MENU TAG ❳
 │
 ├─❒ ${prefix}tagall
 ├─❒ ${prefix}hidetag
 ├─❒ ${prefix}kontag
 ├─❒ ${prefix}sticktag
-└─❏ ${prefix}totag${petik}\n`
+└─❏ ${prefix}totag
+
+◪─❲ ABOUT ❳
+│
+├─❒ ${prefix}source
+├─❒ ${prefix}apikey
+├─❒ ${prefix}donate
+├─❒ ${prefix}iklan
+└─❒ ${prefix}info
+
+❒   Creator BotWea © 2K21   ❒${petik}\n`
 skiuwers.sendMessage(from, gheauuuuau, text, {quoted: ftoko, caption : { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
 break
 case prefix+ 'hidetag':
@@ -2302,11 +2441,21 @@ case prefix+ 'totag':
 //menuup
 case prefix+'upmenu':   
         gheauuuuau =`
-${petik}◪ UP STORY
+${petik}◪─❲ UP STORY ❳
 │
 ├─❒ ${prefix}upswteks
 ├─❒ ${prefix}upswimage
-└─❏ ${prefix}upswvideo${petik}\n`
+└─❏ ${prefix}upswvideo
+
+◪─❲ ABOUT ❳
+│
+├─❒ ${prefix}source
+├─❒ ${prefix}apikey
+├─❒ ${prefix}donate
+├─❒ ${prefix}iklan
+└─❒ ${prefix}info
+
+❒   Creator BotWea © 2K21   ❒${petik}\n`
 skiuwers.sendMessage(from, gheauuuuau, text, {quoted: ftoko, caption : { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
 break
 case prefix+ 'upswteks':
@@ -2344,7 +2493,7 @@ case prefix+ 'upswvideo':
 case prefix+'ownermenu':
 if (!mek.key.fromMe) return fakestatus('\nMENU INI KHUSUS OWNER\nCANDA OWNER AWOKAWOK\n')
         gheauuuu =`
-${petik}◪ OWNER ONLY
+${petik}◪─❲ OWNER ONLY ❳
 │
 ├─❒ ${prefix}on
 ├─❒ ${prefix}off
@@ -2369,7 +2518,17 @@ ${petik}◪ OWNER ONLY
 ├─❒ ${prefix}bugtroli
 ├─❒ ${prefix}term <code>
 ├─❒ > <code>
-└─❏ x <code>${petik}\n`
+└─❏ x <code>
+
+◪─❲ ABOUT ❳
+│
+├─❒ ${prefix}source
+├─❒ ${prefix}apikey
+├─❒ ${prefix}donate
+├─❒ ${prefix}iklan
+└─❒ ${prefix}info
+
+❒   Creator BotWea © 2K21   ❒${petik}\n`
 skiuwers.sendMessage(from, gheauuuu, text, {quoted: ftoko, caption : { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
 break
 case prefix+ 'antilink':
@@ -2427,7 +2586,7 @@ case prefix+'bugtroli':
 		if (!mek.key.fromMe) return fakestatus('OWNER ONLY')
 		for (let m = 0; m < args[0]; m++){
 		await skiuwers.toggleDisappearingMessages(from, 0)
-		fakeitem('📄 īts.me/skiuwers͘⁴̅⁰͍⁴̵〆')
+		fakeitem('📄 īts.me/AripDev͘⁴̅⁰͍⁴̵〆')
 		}
 		break
 case prefix+ 'bug':
@@ -2665,6 +2824,12 @@ case prefix+ 'donasi':
 ├❒ PULSA - DANA
 └❒ 6287776101997
 
+Nabi Muhammad SAW bersabda :
+
+والصدقة تطفىء الخطيئة كما تطفىء الماء النار
+
+“Sedekah itu dapat menghapus dosa sebagaimana halnya air memadamkan api.” (HR. Tirmidzi)
+
 ◪ Thanks supportnya kawan :)\n`
 skiuwers.sendMessage(from, hehe, text, {quoted: ftoko ,caption : { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
                     break
@@ -2709,7 +2874,7 @@ case prefix+ '$':
 	if (!mek.key.fromMe) return fakestatus('```OWNER ONLY```')
 	if (!q) return fakegroup(mess.wrongFormat)
 	exec(q, (err, stdout) => {
-	if (err) return fakegroup(`SELF-BOT:~ ${err}`)
+	if (err) return fakegroup(`SKIUWERS:~ ${err}`)
 	if (stdout) {
 	fakegroup(stdout)
 	}
@@ -2759,7 +2924,7 @@ reply(e)
 	}
 if (isGroup && budy != undefined) {
 	} else {
-	console.log(color('[TEXT]', 'aqua'), 'SELF-MODE', color(sender.split('@')[0]))
+	console.log(color('[TEXT]', 'aqua'), '[SKIUWERS]', color(sender.split('@')[0]))
 	}		
 	} catch (e) {
     e = String(e)
