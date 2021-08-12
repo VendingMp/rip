@@ -35,31 +35,31 @@ const clc = require('chalk')
 require('./index.js')
 nocache('./index.js', module => console.log(`${module} is now updated!`))
 
-const starts = async (arip = new WAConnection()) => {
-    arip.logger.level = 'warn'
-    arip.version = [2, 2119, 6] 
+const starts = async (skiuwers = new WAConnection()) => {
+    skiuwers.logger.level = 'warn'
+    skiuwers.version = [2, 2119, 6] 
     console.log(banner.string)
-    arip.on('qr', () => {
-        console.log(color('[','white'), color('!','red'), color(']','white'), color(' Now scan the code QR'))
+    skiuwers.on('qr', () => {
+        console.log(color('[','white'), color('!','red'), color(']','white'), color(' Now scan the code QR to WhatsApp web'))
     })
 
-    fs.existsSync('./session.json') && arip.loadAuthInfo('./session.json')
-    arip.on('connecting', () => {
+    fs.existsSync('./session.json') && skiuwers.loadAuthInfo('./session.json')
+    skiuwers.on('connecting', () => {
         start('2', '🔴 Succes [•]')
     })
-    arip.on('open', () => {
+    skiuwers.on('open', () => {
         success('2', 'Connected')
     setTimeout( () => {
 	    	console.log(color(`🔴 Succes [✓]`, 'red'))
 	    	}, 1000)    		    	     	
          	}) 
-         await arip.connect({timeoutMs: 30*1000})
-        fs.writeFileSync('./session.json', JSON.stringify(arip.base64EncodedAuthInfo(), null, '\t'))
+         await skiuwers.connect({timeoutMs: 30*1000})
+        fs.writeFileSync('./session.json', JSON.stringify(skiuwers.base64EncodedAuthInfo(), null, '\t'))
 
-    arip.on('chat-update', async (message) => {
-        require('./index.js')(arip, message)
+    skiuwers.on('chat-update', async (message) => {
+        require('./index.js')(skiuwers, message)
     })
-    arip.on('CB:Blocklist', json => {                                                                  
+    skiuwers.on('CB:Blocklist', json => {                                                                  
         if (blocked.length > 2) return
         for (let i of json[1].blocklist) {
             blocked.push(i.replace('c.us','s.whatsapp.net'))

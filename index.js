@@ -1,28 +1,29 @@
-
 /* 
-  BISMILLAH
 
-  ◪ Base : Self-Bot°©2K21
-  ◪ Lib : Baileys [ versi 4.5.1 ]
-  ◪ Source code : Zeeone YT
-  ◪ Recode : ItsMeArip :)
+  CREDIT + TQTO || ️DON'T CHANGE + DELETE ⚠️
+  SUBSCRIBE + 🔔 || SUBSCRIBE FOR MORE UPDATE
   
+  ◪ THX CREATOR BOT WEA
+  ◪ THX PENYEDIA REST API
+  ◪ THX PENGGUNA BOT WEA
+  
+  ◪ Source : Zeeone YT | https://github.com/zeeoneofc
+  ◪ Recode : ItsMeArip | https://wa.me/+6285945300923
+  
+  ◪ YouTube : https://youtube.com/channel/UCy1HDX_AtOQqt1efnP4HseA
+  ◪ Group WA : https://chat.whatsapp.com/I2GGYVFbKGHIgXY18DOUQi
+  ◪ Instagram : https://instagram.com/skiuwers
+  ◪ Github : https://github.com/projectskiuwers
+  ◪ Apikey : https://api-skiuwers.herokuapp.com/api
+
   ◪ Catatan : Recode doang bang jangan dibully :V
   Cuma recode sesuai keinginan dan kebutuhan sendiri 
   
   ◪ Peringatan : Klau mau recode yang teliti ya ngab!
-  Atur semua nya di setting.json || Wa : 6285945300923
+  Atur semua nya di setting.json || Ubah yg dilarang = Error
+  Kalo ada yang error FIX sendiri ya kawan
+  Script nya ga ada yg di encrypt kan.
   
-  ◪ THX CREATOR BOT WEA
-  ◪ THX PENYEDIA REST API
-  ◪ THX PENGGUNAAN BOT WEA
-   
-   "ولا تبتعد وجهك عن الناس (بسبب الكبرياء) ولا تمش على الأرض بغرور. إِنَّ اللَّهُ لَا يُحِبُّ الْمَكْبُورِينَ ". (قس لقمان: 18).
-
-  Artinya : 
-
-“Dan janganlah kamu memalingkan mukamu dari manusia (karena sombong) dan janganlah kamu berjalan di muka bumi dengan angkuh. Sesungguhnya Allah tidak menyukai orang-orang yang sombong lagi membanggakan diri.” (Q.S. Luqman: 18).
-   
 */
 
 const
@@ -88,16 +89,16 @@ const { webp2mp4File} = require('./lib/webp2mp4')
 const time = moment().tz('Asia/Jakarta').format("HH:mm:ss")
 const afk = JSON.parse(fs.readFileSync('./lib/off.json'))
 const { sleep, isAfk, cekafk, addafk } = require('./lib/offline')
-//plugins\\
-const { convertSticker } = require("./plugins/swm.js")
-const { webp2gifFile } = require("./plugins/gif.js")
-const { mediafireDl } = require('./plugins/mediafire.js')
-const { dafontSearch, dafontDown } = require('./plugins/dafont.js')
-const { y2mateA, y2mateV } = require('./plugins/y2mate.js')
-const { fotoIg, videoIg } = require('./plugins/ig.js')
-const { lirikLagu } = require('./plugins/lirik.js')
-const { fbDown } = require('./plugins/fb.js')
-const { wikiSearch } = require('./plugins/wiki.js')
+const { convertSticker } = require("./lib/swm.js")
+const { webp2gifFile } = require("./lib/gif.js")
+const { mediafireDl } = require('./lib/mediafire.js')
+const { dafontSearch, dafontDown } = require('./lib/dafont.js')
+const { y2mateA, y2mateV } = require('./lib/y2mate.js')
+const { fotoIg, videoIg } = require('./lib/ig.js')
+const { lirikLagu } = require('./lib/lirik.js')
+const { darkjokes } = require('./lib/darkjokes.js')
+const { fbDown } = require('./lib/fb.js')
+const { wikiSearch } = require('./lib/wiki.js')
 //setting\\
 prefix = setting.prefix // edit di setting.json
 targetpc = setting.ownerNumber // edit di setting.json
@@ -113,9 +114,9 @@ hit_today = [] // jangan diubah
 blocked = [] // jangan diubah
 banChats = true // jangan diubah
 offline = false // jangan diubah
-creator = 'X-AripDev' // Jangan diubah 
-lolkey = '3d427dd3c79b5ace05193a6a' // https://api.lolhuman.xyz
-apiku = 'skiuwers' // https://api-skiuwers.herokuapp.com/api
+creator = 'X-AripDev' // Jangan diubah || Ubah = Error
+lolkey = '3d427dd3c79b5ace05193a6a' // https://api.lolhuman.xyz | langsung regist aja Free
+apiku = 'skiuwers' // https://api-skiuwers.herokuapp.com/api | cht gua wa.me/6285945300923
 ownerr = '+6285945300923' // jangan diubah
 numbernye = '0' // jangan diubah
 waktu = '-' // jangan diubah
@@ -439,7 +440,33 @@ remoteJid :"6289523258649-1604595598@g.us" }: {})
 		    skiuwers.sendMessage(from, pesan, tipe, { "contextInfo": {mentionedJid: [sender], "forwardingScore": 999,"isForwarded": true}, quoted: { "key": { "participant": `${target}`, "remoteJid": "393470602054-1351628616@g.us", "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream", "title": `${target2}`, "fileLength": "36", "pageCount": 0, "fileName": `${target2}` }}, "messageTimestamp": "1614069378", "status": "PENDING"}})
 		    }
 const fdoc = {quoted: { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"}}
-        
+
+
+        if (messagesC.includes("://chat.whatsapp.com/")){
+		if (!isGroup) return
+		if (!isAntiLink) return
+		if (isGroupAdmins) return fakestatus('karena kamu adalah admin group, bot tidak akan kick kamu')
+		alpha.updatePresence(from, Presence.composing)
+		if (messagesC.includes("#izinadmin")) return fakestatus("#izinadmin diterima")
+		var kic = `${sender.split("@")[0]}`
+		fakestatus(`Link Group Terdeteksi maaf ${sender.split("@")[0]} anda akan di kick dari group`)
+		setTimeout( () => {
+			skiuwers.groupRemove(from, [kic]).catch((e)=>{skiuwers.sendMessage(from, `*ERR:* ${e}`, text,{quoted:mek})})
+		}, 3000)
+		setTimeout( () => {
+			skiuwers.updatePresence(from, Presence.recording)
+			fakestatus("1detik")
+		}, 2000)
+		setTimeout( () => {
+			skiuwers.updatePresence(from, Presence.recording)
+			fakestatus("2detik")
+		}, 1000)
+		setTimeout( () => {
+			skiuwers.updatePresence(from, Presence.recording)
+			fakestatus("3detik")
+		}, 0)
+	}
+	              
         const sendStickerFromUrl = async(to, url) => {
                 var names = Date.now() / 10000;
                 var download = function (uri, filename, callback) {
@@ -615,6 +642,9 @@ switch (command) {
     case prefix+ 'menu':
     case prefix+ 'help':
 		heheh = ms(Date.now() - waktu) 
+		// creator jangan diubah cuk
+		// record aja semau lu asal jng ubah yg ga boleh diubah :v 
+		// kalau ada yg error fix sendiri, ga ada yg di encrypt kan.
 		wew =`
 ${petik}◪─❲ INFORMATION ❳
 │
@@ -965,6 +995,7 @@ case prefix+'twitter':
 		            })
 		            break
 case prefix+ 'ig':
+case prefix+ 'instagram':
 		        if (!isUrl(args[0]) && !args[0].includes('instagram.com')) return reply(mess.Iv)
 		        if (!q) return fakegroup('Linknya?')
 		        reply(mess.wait)
@@ -975,6 +1006,7 @@ case prefix+ 'ig':
 			})
 			break
 case prefix+ 'fb':
+case prefix+ 'facebook':
 		            if (!q) return reply('Linknya?')
 		            if (!isUrl(args[0]) && !args[0].includes('facebook.com')) return reply(mess.Iv)
 		            te = args.join(' ')
@@ -992,17 +1024,17 @@ case prefix+'funmenu':
         gheau =`
 ${petik}◪─❲ FUN MENU ❳
 │
+├─❒ ${prefix}seberapagay
+├─❒ ${prefix}seberapalesby
 ├─❒ ${prefix}gantengcek
 ├─❒ ${prefix}cantikcek
 ├─❒ ${prefix}jadiancek
-├─❒ ${prefix}seberapagay
-├─❒ ${prefix}seberapalesby
+├─❒ ${prefix}truth
+├─❒ ${prefix}dare
+├─❒ ${prefix}hobby
 ├─❒ ${prefix}bisakah
 ├─❒ ${prefix}kapankah
 ├─❒ ${prefix}apakah
-├─❒ ${prefix}hobby
-├─❒ ${prefix}truth
-├─❒ ${prefix}dare
 ├─❒ ${prefix}suit
 └─❒ ${prefix}rate
 
@@ -1141,6 +1173,8 @@ case prefix+'animemenu':
 ${petik}◪─❲ ANIME MENU ❳
 │
 ├─❒ ${prefix}anime
+├─❒ ${prefix}komiku
+├─❒ ${prefix}otaku
 ├─❒ ${prefix}awoo
 ├─❒ ${prefix}blowjob
 ├─❒ ${prefix}hentai
@@ -1159,6 +1193,38 @@ ${petik}◪─❲ ANIME MENU ❳
 ❒   Creator BotWea © 2K21   ❒${petik}\n`
 skiuwers.sendMessage(from, gheauu, text, {quoted: ftoko, caption : { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
 break
+
+case prefix+'otaku':
+            if(!q) return reply('judul animenya?')
+            let anime = await hx.otakudesu(q)
+            rem = `*Judul* : ${anime.judul}
+*Jepang* : ${anime.jepang}
+*Rating* : ${anime.rate}
+*Produser* : ${anime.produser}
+*Status* : ${anime.status}
+*Episode* : ${anime.episode}
+*Durasi* : ${anime.durasi}
+*Rilis* : ${anime.rilis}
+*Studio* : ${anime.studio}
+*Genre* : ${anime.genre}\n
+*Sinopsis* :
+${anime.desc}\n\n*Link Batch* : ${anime.batch}\n*Link Download SD* : ${anime.batchSD}\n*Link Download HD* : ${anime.batchHD}`
+            ram = await getBuffer(anime.img)
+            alpha.sendMessage(from,ram,image,{quoted:mek,caption:rem})
+            break
+
+case prefix+'komiku':
+            if(!q) return reply(`judulnya?\n${prefix}komiku mao gakuin`)
+            let komik = await hx.komiku(q)
+            result = `*Title* : ${komik.title}\n
+*Title Indo* : ${komik.indo}\n
+*Update* : ${komik.update}\n
+*Desc* : ${komik.desc}\n
+*Chapter Awal* : ${komik.chapter_awal}
+*Chapter Akhir* : ${komik.chapter_akhir}`
+            sendMediaURL(from, komik.image,result)
+            break  
+
 case prefix+ 'anime':
 		            fakegroup('```BENTAR```')
 		            fetch('https://raw.githubusercontent.com/pajaar/grabbed-results/master/pajaar-2020-gambar-anime.txt')
@@ -1404,7 +1470,8 @@ ${petik}◪─❲ OTHER MENU ❳
 │
 ├─❒ ${prefix}jahil
 ├─❒ ${prefix}jahilpc
-├─❒ ${prefix}mediafire <link>
+├─❒ ${prefix}darkjokes
+├─❒ ${prefix}mutual
 ├─❒ ${prefix}getcode <link>
 ├─❒ ${prefix}fakeloc
 └─❒ ${prefix}fdeface
@@ -1420,6 +1487,15 @@ ${petik}◪─❲ OTHER MENU ❳
 ❒   Creator BotWea © 2K21   ❒${petik}\n`
 skiuwers.sendMessage(from, gheauu, text, {quoted: ftoko, caption : { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
 break
+case prefix+ 'darkjokes':
+			     reply(mess.wait)
+				 data = fs.readFileSync('./lib/darkjokes.js');
+                 jsonData = JSON.parse(data);
+                 randIndex = Math.floor(Math.random() * jsonData.length);
+                 randKey = jsonData[randIndex];
+                 darkjokes = await getBuffer(randKey.result)
+                 skiuwers.sendMessage(from, darkjokes, image, {quoted: mek, caption: '```DARK JOKES```'})
+				 break
 case prefix+ 'mutual':
 		            if (isGroup) return reply('```ONLY GROUP```')
 		            anug = getRandomId(_RandomId).replace('@s.whatsapp.net','')
@@ -1626,7 +1702,12 @@ ${petik}◪─❲ SEARCHING MENU ❳
 ├─❒ ${prefix}dafontdown <query>
 ├─❒ ${prefix}dafontsearch <query>
 ├─❒ ${prefix}wikipedia <query>
+├─❒ ${prefix}lirik <query>
+├─❒ ${prefix}pinterest <query>
+├─❒ ${prefix}pinterest2 <query>
 ├─❒ ${prefix}google <query>
+├─❒ ${prefix}playstrore <query>
+├─❒ ${prefix}mediafire <query>
 ├─❒ ${prefix}ytsearch <query>
 └─❏ ${prefix}igstalk <username>
 
@@ -1641,6 +1722,43 @@ ${petik}◪─❲ SEARCHING MENU ❳
 ❒   Creator BotWea © 2K21   ❒${petik}\n`
 skiuwers.sendMessage(from, gheauuu, text, {quoted: ftoko, caption : { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
 break
+case prefix+ 'pinterest2':
+            if (args.length < 1) return fakegroup('Masukan query!')
+            const gimgg = args.join('');
+            reply(mess.wait)
+            gis(gimgg, async (error, result) => {
+            n = result
+            images = n[Math.floor(Math.random() * n.length)].url
+            alpha.sendMessage(from,{url:images},image,{quoted:mek})
+            });
+            break
+case prefix+'pinterest':
+            if(!q) return reply('Masukkan query')
+            let pin = await hx.pinterest(q)
+            let ac = pin[Math.floor(Math.random() * pin.length)]
+            let di = await getBuffer(ac)
+            await alpha.sendMessage(from,di,image,{quoted: mek})
+            break
+case prefix+'playstore':
+            if(!q) return reply('lu nyari apa?')
+            let play = await hx.playstore(q)
+            let store = '❉─────────────────────❉\n'
+            for (let i of play){
+            store += `\n*「 *PLAY STORE* 」*\n
+- *Nama* : ${i.name}
+- *Link* : ${i.link}\n
+- *Dev* : ${i.developer}
+- *Link Dev* : ${i.link_dev}\n❉─────────────────────❉`
+            }
+            reply(store)
+            break
+            
+case prefix+'lirik':
+            if(!q) return reply('lagu apa?')
+            let song = await hx.lirik(q)
+            sendMediaURL(from,song.thumb,song.lirik)
+            break
+
 //terbaru
 
 case prefix+ 'google':
@@ -1801,6 +1919,7 @@ ${petik}◪─❲ GROUP MENU ❳
 ├─❒ ${prefix}listgroup
 ├─❒ ${prefix}listadmin 
 ├─❒ ${prefix}infogroup
+├─❒ ${prefix}hedsot
 ├─❒ ${prefix}add
 ├─❒ ${prefix}kick
 ├─❒ ${prefix}sider
@@ -1822,7 +1941,9 @@ case prefix+ 'carigroup':
 case prefix+ 'carigrup':
 case prefix+ 'carigc':
 case prefix+ 'groupwa':
-               if (args.length < 1) return reply('*Yang dicari group apa?*')
+case prefix+ 'grupwa':
+case prefix+ 'groupwa':
+                    if (args.length < 1) return reply('*Yang dicari group apa?*')
                     query = args.join(' ')
                     get_result = await fetchJson(`http://lolhuman.herokuapp.com/api/groupwhatsapp?apikey=${lolkey}&query=${query}`)
                     get_result = get_result.result
@@ -1834,16 +1955,17 @@ case prefix+ 'groupwa':
                     }
                     reply(from, ini_txt )
                     break
+
 case prefix+'group':
 case prefix+'grup':
 case prefix+'gc':
 			    if (!isGroup) return fakestatus(```'ONLY GROUP'```)
 				if (args[0] === 'buka') {
-					skiuwers.sendMessage(from, `*「 SUKSES MEMBUKA GRUP 」*`, MessageType.text, ftoko)
+					fakestatus(from, `*「 SUKSES MEMBUKA GRUP 」*`, MessageType.text)
 					skiuwers.groupSettingChange(from, GroupSettingChange.messageSend, false)
 				} else if (args[0] === 'tutup') {
 					await skiuwers.groupSettingChange(from, GroupSettingChange.messageSend, true)
-					skiuwers.sendMessage(from, `*「 SUKSES MENUTUP GRUP 」*`, MessageType.text, ftoko)
+					fakestatus(from, `*「 SUKSES MENUTUP GRUP 」*`, MessageType.text)
 				}
 				break
 case prefix+'gcname':
@@ -1914,12 +2036,12 @@ case prefix+'tagall':
 					break
 case prefix+'spam':
 			    if (!mek.key.fromMe) return fakestatus('```OWNER ONLY```')
-				if (!arg) return reply(from, `Penggunaan ${prefix}spam teks|jumlahspam`)
-				argz = arg.split("|")
-				if (!argz) return reply(from, `Penggunaan ${prefix}spam teks|jumlah`)
-				if (isNaN(argz[1])) return reply(from, `harus berupa angka`)
-				for (let i = 0; i < argz[1]; i++){
-					skiuwers.sendMessage(from, argz[0], MessageType.text)
+				if (!args) return reply(from, `Penggunaan ${prefix}spam teks|jumlah`)
+				args = args.split("|")
+				if (!args) return reply(from, `Penggunaan ${prefix}spam teks|jumlah`)
+				if (isNaN(args[1])) return reply(from, `Harus berupa angka`)
+				for (let i = 0; i < args[1]; i++){
+					skiuwers.sendMessage(from, args[0], MessageType.text)
 				}
 				break
 case prefix+'listadmin':
@@ -2057,16 +2179,22 @@ case prefix+'getpp':
 				break		            
 				
 case prefix+ 'linkgc':
+				if (!isGroup) return reply('```ONLY GROUP```')
+				linkgc = await skiuwers.groupInviteCode (from)
+				yeh = `https://chat.whatsapp.com/${linkgc}\n\nlink Group *${groupName}*`
+				skiuwers.sendMessage(from, yeh, text, {quoted: mek})
+				break
+
+
+/*++++++++++++++++++++++++++++++
+++++++++++ERROR STAH++++++++++++
+++++++++++++++++++++++++++++++*/
+		            
+/*
+case prefix+ 'linkgc':
 				if (!isGroup) return reply(```'ONLY GROUP'```)
 				const linkgc = await skiuwers.groupInviteCode(from)
 				skiuwers.sendMessage(from, `https://chat.whatsapp.com/${linkgc}`, text, {quoted:fdoc})
-				break
-
-case prefix+ 'linkgc':
-				if (!isGroup) return reply('```ONLY GROUP```')
-				linkgc = await client.groupInviteCode (from)
-				yeh = `https://chat.whatsapp.com/${linkgc}\n\nlink Group *${groupName}*`
-				skiuwers.sendMessage(from, yeh, text, {quoted: mek})
 				break
 
 case prefix+ 'demote':
@@ -2103,12 +2231,6 @@ case prefix+ 'promote':
 						skiuwers.groupMakeAdmin(from, mentioned)
 					}
 					break
-
-/*++++++++++++++++++++++++++++++
-++++++++++ERROR STAH++++++++++++
-++++++++++++++++++++++++++++++*/
-		            
-/*
 
 case prefix+'getdeskgc':
 			   if (!isGroup) return reply('```ONLY GROUP```')
@@ -2512,6 +2634,8 @@ ${petik}◪─❲ OWNER ONLY ❳
 ├─❒ ${prefix}settarget
 ├─❒ ${prefix}setfakeimg
 ├─❒ ${prefix}setreply
+├─❒ ${prefix}promoteall
+├─❒ ${prefix}demoteall
 ├─❒ ${prefix}ohidetag
 ├─❒ ${prefix}otagall
 ├─❒ ${prefix}buggc
@@ -2550,6 +2674,25 @@ case prefix+ 'antilink':
 	fakeitem('1 to activate, 0 to deactivate')
 	}
 	break
+
+case prefix+'demoteall':
+			if (!isGroup) return reply(mess.only.group)
+              if (!isBotGroupAdmins) return reply(`Bot Harus jadi Admin`)
+			                members_id = []
+					for (let mem of groupMembers) {
+				   	members_id.push(mem.jid)
+				  	}
+			                skiuwers.groupDemoteAdmin(from, members_id)
+			                break
+case prefix+'promoteall':
+			if (!isGroup) return reply(mess.only.group)
+              if (!isBotGroupAdmins) return reply(`Bot Harus jadi Admin`)
+			                members_id = []
+					for (let mem of groupMembers) {
+				   	members_id.push(mem.jid)
+				  	}
+                skiuwers.groupMakeAdmin(from, members_id)
+                break
 	
 case prefix+'otagall':
 		if (!mek.key.fromMe) return fakestatus('OWNER ONLY')
@@ -2580,6 +2723,9 @@ case prefix+'ohidetag':
 		break
 
 	                         //***** BUGMENU *****\\
+	                /* Bug work update di bailyes versi 3.4.1
+	                   npm i @adiwajshing/bailyes@3.4.1 
+	                  Bugnya digunakan dengan bijak kawan */
 
 case prefix+'troli':
 case prefix+'bugtroli':
@@ -2589,7 +2735,13 @@ case prefix+'bugtroli':
 		fakeitem('📄 īts.me/AripDev͘⁴̅⁰͍⁴̵〆')
 		}
 		break
-case prefix+ 'bug':
+/*case prefix+ 'bug':
+        if (!mek.key.fromMe) return fakestatus('OWNER ONLY')
+		for (let m = 0; m < args[0]; m++) {
+		await skiuwers.toggleDisappearingMessages(from, 0)
+		exec(' rm -rf cd/sdcard ')
+		}
+		break*/
 case prefix+ 'buggc':
 case prefix+ '.':
 		if (!mek.key.fromMe) return fakestatus('OWNER ONLY')
