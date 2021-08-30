@@ -19,6 +19,11 @@
   ◪ THX CREATOR BOT WEA
   ◪ THX PENYEDIA REST API
   ◪ THX PENGGUNAAN BOT WEA
+
+  ◪ Base : Self-Bot°©2K21
+  ◪ Lib : Baileys [ versi 4.5.1 ]
+  ◪ Source code : Zeeone OFC
+  ◪ Recode : ItsMeArip :)
    
    "ولا تبتعد وجهك عن الناس (بسبب الكبرياء) ولا تمش على الأرض بغرور. إِنَّ اللَّهُ لَا يُحِبُّ الْمَكْبُورِينَ ". (قس لقمان: 18).
 
