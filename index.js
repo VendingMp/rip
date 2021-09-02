@@ -1,5 +1,8 @@
 /* 
   BISMILLAH
+  GAK SUB = EROR
+  SUBSCRIBE CHANNEL YOUTUBE ZEEONEOFC & SKIUWERS
+  CREDIT FOR ME -> SUBSCRIBE FOR MORE UPDATE
 
   lolkey = setting.lolkey // https://api.lolhuman.xyz
   Daftar apikey di lol human limit per user gratis kok
@@ -18,7 +21,7 @@
   
   ◪ THX CREATOR BOT WEA
   ◪ THX PENYEDIA REST API
-  ◪ THX PENGGUNAAN BOT WEA
+  ◪ THX PENGGUNA BOT WEA
    
    "ولا تبتعد وجهك عن الناس (بسبب الكبرياء) ولا تمش على الأرض بغرور. إِنَّ اللَّهُ لَا يُحِبُّ الْمَكْبُورِينَ ". (قس لقمان: 18).
 
@@ -258,10 +261,6 @@ msgId="B826873620DD5947E683E3ABE663F263" // jangan diubah
         const reply = (teks) => {
             skiuwers.sendMessage(from, teks, text, {quoted:mek})
         }
-        
-        const freply = (teks) => {
-            skiuwers.sendMessage(from, teks, text, {quoted:mek, contextInfo:{"externalAdReply":{"title": `SKIUWERS BOT`,"body": `SUBSCRIBE YOUTUBE CHANNEL`,"previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./image/${thumb}`),"sourceUrl": `${setting.yt}`}}})
-        }
 
         const sendMess = (hehe, teks) => {
             skiuwers.sendMessage(hehe, teks, text)
@@ -449,7 +448,7 @@ remoteJid :"6289523258649-1604595598@g.us" }: {})
 const fdoc = {quoted: { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"}}
 
 
-// ANTI LINK
+// ANTI LINK | ngambil dari mastah memans :v
 if (messagesC.includes("://chat.whatsapp.com/")){
 if (!isGroup) return
 if (!isAntiLink) return
@@ -640,6 +639,8 @@ wew =`
 ${petik}◪─❲ INFORMATION ❳
 │
 ├❒ Creator : ${ownername}
+├❒ Developer : ${developer}
+├❒ Recode : ${recode}
 ├❒ Mode : ${banChats ? 'SELF-MODE' : 'PUBLIC-MODE'}
 ├❒ Status : ${offline ? 'OFFLINE' : 'ONLINE'}
 ├❒ Date : ${thisDay}, ${day} ${myMonths[bulan]} ${year}
@@ -671,10 +672,17 @@ ${petik}◪─❲ INFORMATION ❳
 ├─❒ ${prefix}iklan
 └─❒ ${prefix}info
 
+◪─❲ THANKS TO ALL ❳
+│
+├─❒ Zeeone OFC
+├─❒ ItsMeArip
+├─❒ SKIUWERS
+├─❒ Penyedia ApiKey
+└─❒ Pengguna BotWea
+
 ❒   Creator BotWea © 2K21   ❒${petik}\n`
 
 skiuwers.sendMessage(from, wew, text, {quoted: ftroli, caption : { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
-freply('Kunjungi channel youtube skiuwer ya kak >_<')
 break
 
 case prefix+'mystat': 
@@ -709,7 +717,6 @@ teskny = `
 ├⌬ Speed : ${latensii.toFixed(4)} Second
 └⌬ Runtime : ${kyun(anu)}${petik}\n`
 				skiuwers.sendMessage(from, teskny, text, {quoted: ftoko, caption : { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
-freply('Kunjungi channel youtube skiuwer ya kak >_<')
 break
 
 //menuconvert
@@ -735,7 +742,6 @@ ${petik}◪─❲ CONVERT MENU ❳
 
 ❒   Creator BotWea © 2K21   ❒${petik}\n`
 skiuwers.sendMessage(from, ghea, text, {quoted: ftoko, caption : { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
-freply('Kunjungi channel youtube skiuwer ya kak >_<')
 break
 case prefix+ 'toimg':
 					if (!isQuotedSticker) return fakeitem('Reply atau tag stiker nya lord!')
@@ -852,7 +858,6 @@ ${petik}◪─❲ DOWNLOAD MENU ❳
 
 ❒   Creator BotWea © 2K21   ❒${petik}\n`
 skiuwers.sendMessage(from, gheaa, text, {quoted: ftoko, caption : { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
-freply('Kunjungi channel youtube skiuwer ya kak >_<')
 break
 		
 case prefix+ 'play':
@@ -1017,7 +1022,6 @@ ${petik}◪─❲ FUN MENU ❳
 
 ❒   Creator BotWea © 2K21   ❒${petik}\n`
 skiuwers.sendMessage(from, gheau, text, {quoted: ftoko, caption : { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
-freply('Kunjungi channel youtube skiuwer ya kak >_<')
 break
 
 //------------------< Math Random >-------------------
@@ -1163,7 +1167,6 @@ Catatan : Disarankan lewat chat pribadi >_<
 
 ❒   Creator BotWea © 2K21   ❒${petik}\n`
 skiuwers.sendMessage(from, gheauu, text, {quoted: ftoko, caption : { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
-freply('Kunjungi channel youtube skiuwer ya kak >_<')
 break
 
 case prefix+'otaku':
@@ -1283,7 +1286,6 @@ ${petik}◪─❲ MAKER MENU ❳
 
 ❒   Creator BotWea © 2K21   ❒${petik}\n`
 skiuwers.sendMessage(from, gheauu, text, {quoted: ftoko, caption : { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
-freply('Kunjungi channel youtube skiuwer ya kak >_<')
 break
 //terbaru
 case prefix+ 'wanted':
@@ -1493,7 +1495,6 @@ case prefix+'othermenu':
 ${petik}◪─❲ OTHER MENU ❳
 │
 ├─❒ ${prefix}artinama
-├─❒ ${prefix}citacita
 ├─❒ ${prefix}otaku
 ├─❒ ${prefix}komiku
 ├─❒ ${prefix}jahil
@@ -1511,15 +1512,8 @@ ${petik}◪─❲ OTHER MENU ❳
 
 ❒   Creator BotWea © 2K21   ❒${petik}\n`
 skiuwers.sendMessage(from, gheauu, text, {quoted: ftoko, caption : { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
-freply('Kunjungi channel youtube skiuwer ya kak >_<')
 break
-case prefix+ 'citacita':  
-if (!isGroup) return reply(mess.only.group) 
-var cita =['http://piyobot.000webhostapp.com/citacita1.mp3','http://piyobot.000webhostapp.com/citacita2.mp3','http://piyobot.000webhostapp.com/citacita3.mp3','http://piyobot.000webhostapp.com/citacita4.mp3','http://piyobot.000webhostapp.com/citacita5.mp3','http://piyobot.000webhostapp.com/citacita6.mp3','http://piyobot.000webhostapp.com/citacita7.mp3','http://piyobot.000webhostapp.com/citacita8.mp3','http://piyobot.000webhostapp.com/citacita9.mp3','http://piyobot.000webhostapp.com/citacita10.mp3','http://piyobot.000webhostapp.com/citacita11.mp3','http://piyobot.000webhostapp.com/citacita12.mp3','http://piyobot.000webhostapp.com/citacita13.mp3','http://piyobot.000webhostapp.com/citacita14.mp3','http://piyobot.000webhostapp.com/citacita15.mp3','http://piyobot.000webhostapp.com/citacita16.mp3','http://piyobot.000webhostapp.com/citacita17.mp3','http://piyobot.000webhostapp.com/citacita18.mp3','http://piyobot.000webhostapp.com/citacita19.mp3','http://piyobot.000webhostapp.com/citacita20.mp3','http://piyobot.000webhostapp.com/citacita21.mp3','http://piyobot.000webhostapp.com/citacita22.mp3','http://piyobot.000webhostapp.com/citacita23.mp3','http://piyobot.000webhostapp.com/citacita24.mp3','http://piyobot.000webhostapp.com/citacita25.mp3','http://piyobot.000webhostapp.com/citacita26.mp3','http://piyobot.000webhostapp.com/citacita27.mp3','http://piyobot.000webhostapp.com/citacita28.mp3','http://piyobot.000webhostapp.com/citacita29.mp3','http://piyobot.000webhostapp.com/citacita30.mp3','http://piyobot.000webhostapp.com/citacita31.mp3','http://piyobot.000webhostapp.com/citacita32.mp3','http://piyobot.000webhostapp.com/citacita33.mp3','http://piyobot.000webhostapp.com/citacita34.mp3','http://piyobot.000webhostapp.com/citacita35.mp3']
-var cita3 = cita[Math.floor(Math.random() * cita.length)]
-cita2 = await getBuffer(cita3)
-skiuwers.sendMessage(from, cita2, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true, duration: 666})
-break
+
 case prefix+ 'get':
             if(!q) return reply('linknya?')
             fetch(`${args[0]}`).then(res => res.text())  
@@ -1615,7 +1609,6 @@ ${petik}◪─❲ ISLAM MENU ❳
 
 ❒   Creator BotWea © 2K21   ❒${petik}\n`
 skiuwers.sendMessage(from, gheauu, text, {quoted: ftoko, caption : { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
-freply('Kunjungi channel youtube skiuwer ya kak >_<')
 break
 case prefix+ 'alquran':
                     if (args.length < 1) return reply('Example: .alquran 18 or .alquran 18/10 or .alquran 18/1-10')
@@ -1749,7 +1742,6 @@ ${petik}◪─❲ SEARCHING MENU ❳
 
 ❒   Creator BotWea © 2K21   ❒${petik}\n`
 skiuwers.sendMessage(from, gheauuu, text, {quoted: ftoko, caption : { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
-freply('Kunjungi channel youtube skiuwer ya kak >_<')
 break
 /*
 case prefix+ 'googleimage':
@@ -1966,7 +1958,6 @@ ${petik}◪─❲ GROUP MENU ❳
 
 ❒   Creator BotWea © 2K21   ❒${petik}\n`
 skiuwers.sendMessage(from, gheauuus, text, {quoted: ftoko, caption : { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
-freply('Kunjungi channel youtube skiuwer ya kak >_<')
 break
 
 case prefix+ 'welcome':  
@@ -2297,7 +2288,6 @@ ${petik}◪─❲ STORAGE MENU ❳
 
 ❒   Creator BotWea © 2K21   ❒${petik}\n`
 skiuwers.sendMessage(from, gheauuuuu, text, {quoted: ftoko, caption : { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
-freply('Kunjungi channel youtube skiuwer ya kak >_<')
 break
 /*
 ]=====> STORAGE MENU <=====[
@@ -2440,7 +2430,6 @@ ${petik}◪─❲ MENU TAG ❳
 
 ❒   Creator BotWea © 2K21   ❒${petik}\n`
 skiuwers.sendMessage(from, gheauuuuau, text, {quoted: ftoko, caption : { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
-freply('Kunjungi channel youtube skiuwer ya kak >_<')
 break
 case prefix+ 'hidetag':
 case prefix+ '_`':
@@ -2600,7 +2589,6 @@ ${petik}◪─❲ UP STORY ❳
 
 ❒   Creator BotWea © 2K21   ❒${petik}\n`
 skiuwers.sendMessage(from, gheauuuuau, text, {quoted: ftoko, caption : { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
-freply('Kunjungi channel youtube skiuwer ya kak >_<')
 break
 case prefix+ 'upswteks':
 		if (!mek.key.fromMe) return fakestatus('```OWNER ONLY```')
@@ -2675,7 +2663,6 @@ ${petik}◪─❲ OWNER ONLY ❳
 
 ❒   Creator BotWea © 2K21   ❒${petik}\n`
 skiuwers.sendMessage(from, gheauuuu, text, {quoted: ftoko, caption : { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
-freply('Kunjungi channel youtube skiuwer ya kak >_<')
 break
 	
 case prefix+'otagall':
@@ -2932,7 +2919,6 @@ case prefix+ 'iklan':
  wa.me/+6285945300923
  wa.me/+${setting.ownerNumber} \n`
 skiuwers.sendMessage(from, infoo, text, {quoted: ftroli, caption: { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
-freply('Kunjungi channel youtube skiuwer ya kak >_<')
 break
 case prefix+ 'donate':
 case prefix+ 'donasi':
@@ -2951,7 +2937,7 @@ Nabi Muhammad SAW bersabda :
 
 ⊙ Thanks supportnya kawan :)\n`
 skiuwers.sendMessage(from, hehe, text, {quoted: ftoko, caption : { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
-freply('Kunjungi channel youtube skiuwer ya kak >_<')
+
 break
 case prefix+ 'sc':
 case prefix+ 'source': 
@@ -2983,7 +2969,7 @@ case prefix+'creator':
 	+ `TEL;type=CELL;type=VOICE;waid=${setting.ownerNumber}:${setting.ownerNumberr}\n`
 	+ 'END:VCARD'.trim()
 	skiuwers.sendMessage(from, {displayName: `Creator BotWea © 2K21`, vcard: vcard2}, contact, { quoted: fkontak, contextInfo: {"mentionedJid": members_ids}})
-	freply('TUHH NOMER OWNER KU [(>_<)] JANGAN KASARIN YAA')
+	reply('TUHH NOMER OWNER KU [(>_<)] JANGAN KASARIN YAA')
 	break
 
 case prefix+ 'status':
