@@ -1,5 +1,8 @@
 /* 
   BISMILLAH
+  GAK SUB = EROR
+  SUBSCRIBE CHANNEL YOUTUBE ZEEONEOFC & SKIUWERS
+  CREDIT FOR ME -> SUBSCRIBE FOR MORE UPDATE
 
   lolkey = setting.lolkey // https://api.lolhuman.xyz
   Disarankan untuk limit yg tdk terbatas upgrade premium
