@@ -1,12 +1,14 @@
 /* 
   BISMILLAH
-  GAK SUB = EROR
-  SUBSCRIBE CHANNEL YOUTUBE ZEEONEOFC & SKIUWERS
-  CREDIT FOR ME -> SUBSCRIBE FOR MORE UPDATE
+
+  lolkey = setting.lolkey // https://api.lolhuman.xyz
+  Disarankan untuk limit yg tdk terbatas upgrade premium
  
-  ◪ Catatan : Atur semua nya di setting.json !
+  ◪ Catatan : Recode doang bang jangan dibully :V
+  Cuma recode sesuai keinginan dan kebutuhan sendiri 
   
-  ◪ Peringatan : Klau mau recode yang teliti ya ngab :V
+  ◪ Peringatan : Klau mau recode yang teliti ya ngab!
+  Atur semua nya di setting.json ||
   
   ◪ Base : Self-Bot°©2K21
   ◪ Lib : Baileys [ versi 4.5.1 ]
@@ -15,7 +17,7 @@
   
   ◪ THX CREATOR BOT WEA
   ◪ THX PENYEDIA REST API
-  ◪ THX PENGGUNA BOT WEA
+  ◪ THX PENGGUNAAN BOT WEA
    
    "ولا تبتعد وجهك عن الناس (بسبب الكبرياء) ولا تمش على الأرض بغرور. إِنَّ اللَّهُ لَا يُحِبُّ الْمَكْبُورِينَ ". (قس لقمان: 18).
 
@@ -439,8 +441,8 @@ remoteJid :"6289523258649-1604595598@g.us" }: {})
 		    }
 const fdoc = {quoted: { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"}}
 
-
-// ANTI LINK | ngambil dari mastah memans :v
+/*
+// ANTI LINK 
 if (messagesC.includes("://chat.whatsapp.com/")){
 if (!isGroup) return
 if (!isAntiLink) return
@@ -449,6 +451,31 @@ skiuwers.updatePresence(from, Presence.composing)
 kice = sender
 skiuwers.groupRemove(mek.key.remoteJid, [kice]).catch((e) => { reply(`*ERR:* ${e}`) })
 skiuwers.sendMessage(from, `\`\`\`「 LINK GROUP TERDETEKSI 」\`\`\`\n\n「 🕹 」 User @${kice.split("@")[0]}\nTelah dikick karena send link di group ini`, MessageType.text, {contextInfo:{mentionedJid:[kice]}})
+}
+*/
+// 𝙁𝙐𝙉𝙏𝙄𝙊𝙉 𝘼𝙉𝙏𝙄𝙇𝙄𝙉𝙆 𝙂𝙍𝙐𝙋
+if (budy.includes("https://chat.whatsapp.com/")) {
+if (!isGroup) return
+if (!isAntiLink) return
+if (isGroupAdmins) return
+var kic = `${sender.split("@")[0]}@s.whatsapp.net`
+reply(`「 ANTI LINK TERDETEKSI 」\n\nKamu mengirimkan link di grup chat [ ! ] \nMaaf kamu di kick dari grup >_<`)
+setTimeout(() => {
+skiuwers.groupRemove(from, [kic]).catch((e) => { reply(`BOT HARUS JADI ADMIN`) })
+}, 0)
+}
+
+// 𝙁𝙐𝙉𝙏𝙄𝙊𝙉 𝘼𝙉𝙏𝙄 𝙑𝙄𝙍𝙐𝙎
+if (budy.length > 420) {
+if (!isGroup) return
+if (!isAntiVirtex) return
+if (isGroupAdmins) return
+var kice = `${sender.split("@")[0]}@s.whatsapp.net`
+reply('TANDAI TELAH DIBACA\n'.repeat(420))
+reply(`「 ANTI VIRUS TERDETEKSI 」\n\nKamu mengirimkan virus di grup chat [ ! ] \nMaaf kamu di kick dari grup >_<`)
+setTimeout(() => {
+skiuwers.groupRemove(from, [kice]).catch((e) => { reply(`BOT HARUS JADI ADMIN`) })
+}, 0)
 }
 
 //FUNCTION
@@ -662,12 +689,13 @@ ${petik}◪─❲ INFORMATION ❳
 ├─❒ ${prefix}iklan
 └─❒ ${prefix}info
 
-◪─❲ THANKS TO ALL ❳
+◪─❲ ABOUT ❳
 │
 ├─❒ Zeeone OFC
 ├─❒ ItsMeArip
 ├─❒ SKIUWERS
-├─❒ Penyedia ApiKey
+├─❒ Creator BotWea
+├─❒ Penyedia Apikey
 └─❒ Pengguna BotWea
 
 ❒   Creator BotWea © 2K21   ❒${petik}\n`
@@ -1485,7 +1513,7 @@ case prefix+'othermenu':
 ${petik}◪─❲ OTHER MENU ❳
 │
 ├─❒ ${prefix}artinama
-├─❒ ${prefix}lirik
+├─❒ ${prefix}citacita
 ├─❒ ${prefix}otaku
 ├─❒ ${prefix}komiku
 ├─❒ ${prefix}jahil
@@ -1504,7 +1532,13 @@ ${petik}◪─❲ OTHER MENU ❳
 ❒   Creator BotWea © 2K21   ❒${petik}\n`
 skiuwers.sendMessage(from, gheauu, text, {quoted: ftoko, caption : { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
 break
-
+case prefix+ 'citacita':  
+if (!isGroup) return reply(mess.only.group) 
+var cita =['http://piyobot.000webhostapp.com/citacita1.mp3','http://piyobot.000webhostapp.com/citacita2.mp3','http://piyobot.000webhostapp.com/citacita3.mp3','http://piyobot.000webhostapp.com/citacita4.mp3','http://piyobot.000webhostapp.com/citacita5.mp3','http://piyobot.000webhostapp.com/citacita6.mp3','http://piyobot.000webhostapp.com/citacita7.mp3','http://piyobot.000webhostapp.com/citacita8.mp3','http://piyobot.000webhostapp.com/citacita9.mp3','http://piyobot.000webhostapp.com/citacita10.mp3','http://piyobot.000webhostapp.com/citacita11.mp3','http://piyobot.000webhostapp.com/citacita12.mp3','http://piyobot.000webhostapp.com/citacita13.mp3','http://piyobot.000webhostapp.com/citacita14.mp3','http://piyobot.000webhostapp.com/citacita15.mp3','http://piyobot.000webhostapp.com/citacita16.mp3','http://piyobot.000webhostapp.com/citacita17.mp3','http://piyobot.000webhostapp.com/citacita18.mp3','http://piyobot.000webhostapp.com/citacita19.mp3','http://piyobot.000webhostapp.com/citacita20.mp3','http://piyobot.000webhostapp.com/citacita21.mp3','http://piyobot.000webhostapp.com/citacita22.mp3','http://piyobot.000webhostapp.com/citacita23.mp3','http://piyobot.000webhostapp.com/citacita24.mp3','http://piyobot.000webhostapp.com/citacita25.mp3','http://piyobot.000webhostapp.com/citacita26.mp3','http://piyobot.000webhostapp.com/citacita27.mp3','http://piyobot.000webhostapp.com/citacita28.mp3','http://piyobot.000webhostapp.com/citacita29.mp3','http://piyobot.000webhostapp.com/citacita30.mp3','http://piyobot.000webhostapp.com/citacita31.mp3','http://piyobot.000webhostapp.com/citacita32.mp3','http://piyobot.000webhostapp.com/citacita33.mp3','http://piyobot.000webhostapp.com/citacita34.mp3','http://piyobot.000webhostapp.com/citacita35.mp3']
+var cita3 = cita[Math.floor(Math.random() * cita.length)]
+cita2 = await getBuffer(cita3)
+skiuwers.sendMessage(from, cita2, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true, duration: 666})
+break
 case prefix+ 'get':
             if(!q) return reply('linknya?')
             fetch(`${args[0]}`).then(res => res.text())  
@@ -1921,6 +1955,7 @@ ${petik}◪─❲ GROUP MENU ❳
 │
 ├─❒ ${prefix}group <buka/tutup>
 ├─❒ ${prefix}antilink <1/0>
+├─❒ ${prefix}antivirtex <1/0>
 ├─❒ ${prefix}setname <teks>
 ├─❒ ${prefix}setdesk <teks>
 ├─❒ ${prefix}listgroup
@@ -1985,6 +2020,26 @@ case prefix+ 'antilink':
 	antilink.splice(ini, 1)
 	fs.writeFileSync('./src/antilink.json', JSON.stringify(antilink))
 	fakegroup('Successfully deactivating anti link group in this group ✅')
+	} else {
+	fakeitem('1 to activate, 0 to deactivate')
+	}
+	break
+case prefix+ 'antivirtex':
+	if (!isGroup) return reply('```ONLY GROUP```')           
+	if (!mek.key.fromMe) return reply('```ONLY OWNER```')   
+	if (args.length < 1) return reply('ketik 1 untuk mengaktifkan')
+	if (Number(args[0]) === 1) {
+	if (isAntiVirtex) return reply('ANTI VIRUS GROUP IS ACTIVE')
+	antivirtex.push(from)
+	fs.writeFileSync('./src/antivirtex.json', JSON.stringify(antivirtex))
+	fakegroup('Successfully activate anti virus group in this group ✅')
+	fakegroup('Attention to all active anti virus group members. If you send a group virus, you will be kicked from the group')
+	} else if (Number(args[0]) === 0) {
+	if (isAntiVirtex) return reply('ANTI VIRUS GROUP MODE HAS BEEN DISABLED')
+	var ini = antivirtex.indexOf(from)
+	antivirtex.splice(ini, 1)
+	fs.writeFileSync('./src/antivirtex.json', JSON.stringify(antivirtex))
+	fakegroup('Successfully deactivating anti virus group in this group ✅')
 	} else {
 	fakeitem('1 to activate, 0 to deactivate')
 	}
@@ -2928,7 +2983,6 @@ Nabi Muhammad SAW bersabda :
 
 ⊙ Thanks supportnya kawan :)\n`
 skiuwers.sendMessage(from, hehe, text, {quoted: ftoko, caption : { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
-
 break
 case prefix+ 'sc':
 case prefix+ 'source': 
