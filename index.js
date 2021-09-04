@@ -1,17 +1,13 @@
 /* 
-  BISMILLAH
-  GAK SUB = EROR
+  BISMILLAH | GAK SUB = EROR
   SUBSCRIBE CHANNEL YOUTUBE ZEEONEOFC & SKIUWERS
   CREDIT FOR ME -> SUBSCRIBE FOR MORE UPDATE
 
   lolkey = setting.lolkey // https://api.lolhuman.xyz
   Disarankan untuk limit yg tdk terbatas upgrade premium
  
-  ◪ Catatan : Recode doang bang jangan dibully :V
-  Cuma recode sesuai keinginan dan kebutuhan sendiri 
-  
+  ◪ Catatan : Atur semua nya di setting.json
   ◪ Peringatan : Klau mau recode yang teliti ya ngab!
-  Atur semua nya di setting.json ||
   
   ◪ Base : Self-Bot°©2K21
   ◪ Lib : Baileys [ versi 4.5.1 ]
@@ -692,7 +688,7 @@ ${petik}◪─❲ INFORMATION ❳
 ├─❒ ${prefix}iklan
 └─❒ ${prefix}info
 
-◪─❲ ABOUT ❳
+◪─❲ THANKS TO ALL ❳
 │
 ├─❒ Zeeone OFC
 ├─❒ ItsMeArip
@@ -1957,6 +1953,7 @@ if (!isGroup) return reply('```ONLY GROUP```')
 ${petik}◪─❲ GROUP MENU ❳
 │
 ├─❒ ${prefix}group <buka/tutup>
+├─❒ ${prefix}welcome <1/0>
 ├─❒ ${prefix}antilink <1/0>
 ├─❒ ${prefix}antivirtex <1/0>
 ├─❒ ${prefix}setname <teks>
@@ -1989,7 +1986,7 @@ ${petik}◪─❲ GROUP MENU ❳
 skiuwers.sendMessage(from, gheauuus, text, {quoted: ftoko, caption : { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumb}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
 break
 
-case prefix+ 'welcome':  
+case prefix+ 'welcome': 
 	if (!isGroup) return reply('```ONLY GROUP```')       
 	if (!mek.key.fromMe) return reply('```ONLY OWNER```')   
 	if (args.length < 1) return reply('PILIH 1/0')
@@ -2016,7 +2013,6 @@ case prefix+ 'antilink':
 	antilink.push(from)
 	fs.writeFileSync('./src/antilink.json', JSON.stringify(antilink))
 	fakegroup('Successfully activate anti link group in this group ✅')
-	fakegroup('Attention to all active anti link group members. If you send a group link, you will be kicked from the group')
 	} else if (Number(args[0]) === 0) {
 	if (isAntiLink) return reply('ANTI LINK GROUP MODE HAS BEEN DISABLED')
 	var ini = antilink.indexOf(from)
@@ -2036,7 +2032,6 @@ case prefix+ 'antivirtex':
 	antivirtex.push(from)
 	fs.writeFileSync('./src/antivirtex.json', JSON.stringify(antivirtex))
 	fakegroup('Successfully activate anti virus group in this group ✅')
-	fakegroup('Attention to all active anti virus group members. If you send a group virus, you will be kicked from the group')
 	} else if (Number(args[0]) === 0) {
 	if (isAntiVirtex) return reply('ANTI VIRUS GROUP MODE HAS BEEN DISABLED')
 	var ini = antivirtex.indexOf(from)
