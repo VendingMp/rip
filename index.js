@@ -465,7 +465,7 @@ skiuwers.groupRemove(from, [kic]).catch((e) => { reply(`BOT HARUS JADI ADMIN`) }
 }
 
 // 𝙁𝙐𝙉𝙏𝙄𝙊𝙉 𝘼𝙉𝙏𝙄 𝙑𝙄𝙍𝙐𝙎
-if (budy.length > 420) {
+if (budy.length > 800) {
 if (!isGroup) return
 if (!isAntiVirtex) return
 if (isGroupAdmins) return
