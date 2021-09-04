@@ -18,8 +18,11 @@ const {
 const fs = require('fs')
 const moment = require('moment-timezone')
 const { wait,simih,getBuffer, h2k, generateMessageID, getGroupAdmins, getRandom, start, info, success, banner, close } = require('./lib/functions')
-const gcdetect = JSON.parse(fs.readFileSync('./src/gcdetect.json'))
 const setting = JSON.parse(fs.readFileSync('./settings.json'))
+const antilink = JSON.parse(fs.readFileSync('./src/antilink.json'))
+const antivirtex = JSON.parse(fs.readFileSync('./src/antivirtex.json'))
+const welkom = JSON.parse(fs.readFileSync('./src/welkom.json'))
+const gcdetect = JSON.parse(fs.readFileSync('./src/gcdetect.json'))
 const { spawn, exec, execSync } = require("child_process")
 const { color } = require('./lib/color')
 const clc = require('chalk')
@@ -189,7 +192,7 @@ remoteJid: "0@s.whatsapp.net"},message: {"groupInviteMessage": {"groupJid": "628
     skiuwers.sendMessage(metdata.id, teks, MessageType.text, {quoted: falfa})
     console.log(clc.yellow(`[ Group Setting Change ] In ${metdata.subject}`))
   }
-})
+ })
 }
 
 /**
