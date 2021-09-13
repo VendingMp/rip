@@ -1,7 +1,7 @@
 /* 
 
   BISMILLAH | GAK SUB = EROR
-  SUBSCRIBE CHANNEL YOUTUBE SKIUWERS & ZEEONEOFC
+  SUBSCRIBE CHANNEL YOUTUBE SKIUWERS 
   CREDIT FOR ME -> SUBSCRIBE FOR MORE UPDATE
 
   lolkey = setting.lolkey // https://api.lolhuman.xyz
@@ -11,8 +11,8 @@
   ◪ Peringatan : Klau mau recode yang teliti ya ngab!
   
   ◪ Base : Self-Bot°©2K21
-  ◪ Lib : Baileys [ versi 4.5.1 ]
-  ◪ Developer : Zeeone OFC
+  ◪ Lib : Baileys [ versi 4.5.2 ]
+  ◪ Source code : Zeeone OFC
   ◪ Recode : ItsMeArip :)
   
   ◪ THX CREATOR BOT WEA
