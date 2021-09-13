@@ -2,6 +2,9 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/projectskiuwers/rip/)
 
+![SKIUWERS GITHUB STATS](https://github-readme-stats.vercel.app/api?username=projectskiuwers&show_icons=true&theme=radical)
+
+
 ## HOW TO INSTALL
 ```bash
 > termux-setup-storage [Y]
