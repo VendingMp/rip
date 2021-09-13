@@ -4,6 +4,8 @@
 
 ![SKIUWERS GITHUB STATS](https://github-readme-stats.vercel.app/api?username=projectskiuwers&show_icons=true&theme=radical)
 
+[![TOP LANGS](https://github-readme-stats.vercel.app/api/top-langs/?username=projectskiuwers)](https://github.com/projectskiuwers/github-readme-stats)
+
 
 ## HOW TO INSTALL
 ```bash
