@@ -1,3 +1,7 @@
+## ```Deploy```
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/projectskiuwers/rip/)
+
 ## HOW TO INSTALL
 ```bash
 > termux-setup-storage [Y]
