@@ -5,7 +5,7 @@
 -------
 
 <p align="center">
-  <img src="https://i.top4top.io/p_2082qzylr0.jpg" />
+  <img src="https://b.top4top.io/p_2082g2it21.jpg" />
 </p>
 
 ------
