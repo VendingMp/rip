@@ -24,6 +24,9 @@
 
 <div align="center">
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=projectskiuwers&show_icons=true&theme=nightowl" alt="SKIUWERS" /></p>
+  
+<p>&nbsp;<img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=projectskiuwers&theme=nightowl" alt="SKIUWERS" /></p>
+
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=projectskiuwers&theme=algolia&layout=compact&langs_count=10&hide_border=true&show_icons=true" alt="SKIUWERS"/></p><br> 
 
