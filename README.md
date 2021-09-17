@@ -1,4 +1,4 @@
--------
+## ```DEPLOY```
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/projectskiuwers/rip/)
 
@@ -24,7 +24,7 @@
 
 <p align="center"> <a href="https://youtube.com/channel/UCy1HDX_AtOQqt1efnP4HseA"><img src="https://img.shields.io/youtube/channel/subscribers/UCy1HDX_AtOQqt1efnP4HseA?style=social" /></a><br>
 
-------
+<br>
 
 <div align="center">
 
