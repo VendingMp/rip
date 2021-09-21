@@ -35,5 +35,20 @@
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=projectskiuwers&theme=algolia&layout=compact&langs_count=10&hide_border=true&show_icons=true" alt="SKIUWERS"/></p><br> 
 
 ------
+THANKS TO ALL
+
+[Baileys](https://github.com/adiwajshing/Baileys)
+
+[Zeeone OFC](https://github.com/zeeoneofc)
+
+[SKIUWERS](https://github.com/skiuwers)
+
+[Hexagon](https://github.com/Hexagonz)
+  
+[Xinz](https://github.com/Xinz-Team)
+  
+[ItsMeArip](https://projectskiuwers.github.io/ItsMeArip)
+
+ ------
 
 <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Mario_Gameplay.gif" alt="Mario Game" width="600" />
